@@ -1,0 +1,73 @@
+local M = {}
+--
+M.treesitter = {
+  ensure_installed = {
+    "lua",
+    "vim",
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "tsx",
+    "c",
+    "markdown",
+    "markdown_inline",
+    "json",
+    "bash",
+  },
+  indent = {
+    enable = true,
+    -- disable = {
+    --   "python"
+    -- },
+  },
+}
+
+M.mason = {
+  ensure_installed = {
+    -- lua stuff
+    "lua-language-server",
+    "stylua",
+
+    -- web dev stuff
+    "css-lsp",
+    "html-lsp",
+    "typescript-language-server",
+    "deno",
+    "prettierd",
+    "prettier",
+    "eslint_d",
+    "tailwindcss-language-server",
+    "emmet-language-server",
+
+    -- c/cpp stuff
+    "clangd",
+    "clang-format",
+  },
+}
+
+-- git support in nvimtree
+M.nvimtree = {
+  git = {
+    enable = true,
+  },
+
+  renderer = {
+    highlight_git = true,
+    icons = {
+      show = {
+        git = true,
+      },
+    },
+  },
+}
+
+M.telescope = {
+  extensions = {
+    ["ui-select"] = {
+      theme = "dropdown",
+    },
+  },
+  extensions_list = { "ui-select" },
+}
+return M
