@@ -15,6 +15,8 @@ return {
         mdx = { { "prettierd", "prettier" } },
         typescriptreact = { { "prettierd", "prettier" } },
         javascriptreact = { { "prettierd", "prettierd" } },
+        -- go
+        go = { { "gofumpt", "goimports_reviser" } },
       },
       format_on_save = {
         -- I recommend these options. See :help conform.format for details.

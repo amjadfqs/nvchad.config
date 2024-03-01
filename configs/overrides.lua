@@ -4,16 +4,22 @@ M.treesitter = {
   ensure_installed = {
     "lua",
     "vim",
+    "vimdoc",
     "html",
     "css",
     "javascript",
     "typescript",
     "tsx",
-    "c",
     "markdown",
     "markdown_inline",
     "json",
     "bash",
+    "go",
+    "gomod",
+    "gosum",
+    "gowork",
+    "thrift",
+    "proto",
   },
   indent = {
     enable = true,
@@ -40,9 +46,10 @@ M.mason = {
     "tailwindcss-language-server",
     "emmet-language-server",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    -- go
+    "gopls",
+    "gofumpt",
+    "goimports-reviser",
   },
 }
 
@@ -70,4 +77,5 @@ M.telescope = {
   },
   extensions_list = { "ui-select" },
 }
+
 return M
